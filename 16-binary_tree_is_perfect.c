@@ -6,8 +6,10 @@
 * @tree: tree node
 * Return: int for height
 */
-int get_tree_height(const binary_tree_t *tree) {
-	if (tree == NULL) {
+int get_tree_height(const binary_tree_t *tree)
+{
+	if (tree == NULL)
+	{
 		return (0);
 	}
 
@@ -15,7 +17,7 @@ int get_tree_height(const binary_tree_t *tree) {
 
 	int right_height = get_tree_height(tree->right);
 
-	return 1 + (left_height > right_height ? left_height : right_height);
+	return (1 + (left_height > right_height ? left_height : right_height));
 }
 
 /**
